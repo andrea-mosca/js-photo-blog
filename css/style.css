@@ -40,3 +40,16 @@ body{
     margin: 0 auto;
     text-align: left;
   }
+
+  /* hover */
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: rotate(10deg);
+    z-index: 1;
+  }
+  .card:hover .card-pin{
+    display: none;
+  }

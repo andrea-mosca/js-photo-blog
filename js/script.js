@@ -24,4 +24,7 @@ for (let i = 0; i < 6; i++) {
   }).catch(error =>{
     alert(error.message);
   })
-}
+};
+
+// card si inclina al passaggio del mouse
+
