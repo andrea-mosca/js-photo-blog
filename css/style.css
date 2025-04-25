@@ -1,4 +1,4 @@
-h1, h4{
+h1, h2{
     font-family: 'Edu TAS Beginner',sans-serif;
 }
 
@@ -52,4 +52,16 @@ body{
   }
   .card:hover .card-pin{
     display: none;
+  }
+
+  /* card overlay on click */
+  .overlay{
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(rgb(239, 230, 230, 0.5));
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
