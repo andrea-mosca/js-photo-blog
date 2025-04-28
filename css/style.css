@@ -49,6 +49,7 @@ body{
   .card:hover {
     transform: rotate(10deg);
     z-index: 1;
+    cursor: pointer;
   }
   .card:hover .card-pin{
     display: none;
