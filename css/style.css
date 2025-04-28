@@ -26,8 +26,8 @@ body{
 .card-pin{
     position: absolute;
     top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 50%; /* Porta il bordo sinistro dell'elemento al centro */
+    transform: translateX(-50%); 	/* Centra l'elemento rispetto al SUO centro */
     z-index: 2;
     
 }
@@ -43,14 +43,14 @@ body{
 
   /* hover */
   .card {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* transizione fluida della card*/
   }
   
   .card:hover {
-    transform: rotate(10deg) scale(1.2);
+    transform: rotate(10deg) scale(1.2); /*rotazione e zoom */
     z-index: 3;
     cursor: pointer;
-    box-shadow: 10px 10px 10px;
+    box-shadow: 10px 10px 10px; /*ombra(x,y,%)*/
   }
   .card:hover .card-pin{
     display: none;
@@ -59,15 +59,15 @@ body{
   /* card overlay on click */
 
   .overlay img{
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 90%;
+    max-height: 90%;
   }
   .overlay{
     position: fixed;
     inset: 0;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px); /*sfocatura sfondo img*/
     display: flex;
     padding: 1rem;
     gap: 1rem;
