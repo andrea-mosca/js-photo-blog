@@ -47,9 +47,10 @@ body{
   }
   
   .card:hover {
-    transform: rotate(10deg);
-    z-index: 1;
+    transform: rotate(10deg) scale(1.2);
+    z-index: 3;
     cursor: pointer;
+    box-shadow: 10px 10px 10px;
   }
   .card:hover .card-pin{
     display: none;
@@ -58,8 +59,8 @@ body{
   /* card overlay on click */
 
   .overlay img{
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 70%;
+    max-height: 70%;
   }
   .overlay{
     position: fixed;
