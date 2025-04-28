@@ -55,14 +55,21 @@ body{
   }
 
   /* card overlay on click */
+
+  .overlay img{
+    max-width: 60%;
+    max-height: 60%;
+  }
   .overlay{
-    
     position: fixed;
     inset: 0;
     z-index: 10;
-    background-color: rgba(rgb(0, 0, 0, 0.2));
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
     display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }

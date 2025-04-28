@@ -1,6 +1,8 @@
 const APIUri = `https://lanciweb.github.io/demo/api/pictures/`;
 
 const cardRow = document.getElementById("card-row");
+// overlay el
+const overlayEl = document.getElementById("overlay-element");
 
 const generateHTMLCard = (element) => {
     const cardHTML = `
@@ -34,8 +36,15 @@ axios.get(APIUri).then((response) => {
     cardNodes.forEach(cardNode => {
         cardNode.addEventListener("click", ()=>{
             const imageSrc = cardNode.querySelector('.card-img-top img').src;
-            console.log(imageSrc);
-    
+            // creazione html dell'immagine selezionata più bottone di chiusura
+            overlayEl.innerHTML = `
+            <div><button type="button" class="btn btn-primary" id="close-overlay">Close</button></div>
+             <img src="${imageSrc}" alt="">`
+            overlayEl.classList.remove("d-none");
+
+            // creazionhe funzione per il bottone di chiusura, una volta comparso
+            const closeOverlay = document.getElementById("close-overlay");
+            closeOverlay.addEventListener("click", () =>{ overlayEl.classList.add("d-none");});
         });
     });
     
