@@ -56,11 +56,12 @@ body{
 
   /* card overlay on click */
   .overlay{
+    
     position: fixed;
     inset: 0;
-    z-index: 2;
-    background-color: rgba(rgb(239, 230, 230, 0.5));
-    backdrop-filter: blur(4px);
+    z-index: 10;
+    background-color: rgba(rgb(0, 0, 0, 0.2));
+    backdrop-filter: blur(2px);
     display: flex;
     justify-content: center;
     align-items: center;
